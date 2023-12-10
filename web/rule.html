@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>网页框架示例</title>
+	<style type="text/css">
+        h1{
+            color:crimson;
+        }
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		#container {
+			display: flex;
+			flex-direction: row;
+			height: 100vh;
+		}
+
+		#sidebar {
+			width: 100px;
+			background-color: #8a4012fe;
+			padding: 20px;
+		}
+
+		#content {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		#image-container {
+			margin-left: 20px;
+            position: absolute;
+            top: 50px;
+            left: 200px;
+            
+			float: left;
+		}
+
+		#text-container {
+            
+            padding: 20px;
+            width: 700px;
+			height: 600px;
+			overflow-y: scroll;
+			position: absolute;
+            top: 20px;
+            right: 100px;
+			float: left;
+			text-align: left;
+		}
+
+		button {
+			display: block;
+			margin-bottom: 80px;
+			padding: 10px;
+			background-color:orange;
+            color: white;
+			border: none;
+			cursor: pointer;
+			outline: none;
+            border-radius: 5px;
+            width: 100px;
+            height: 50px;
+		}
+
+		button:hover {
+			background-color: #ccc;
+		}
+        .back {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			padding: 10px 20px;
+			background-color: #ff6600;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="sidebar">
+			<button onclick="showContent(1)">角色关系</button>
+			<button onclick="showContent(2)">APH名词</button>
+			<button onclick="showContent(3)">组合应援</button>
+			<button onclick="showContent(4)">网络礼仪</button>
+            
+		</div>
+		<div id="content">
+			<div id="image-container">
+				<img src="..\image\Screenshot_20231209_231732_com.lofter.android_edi.jpg" alt="图片" width="500px" height="700px">
+			</div>
+			<div id="text-container">
+				<p id="content-1">1.宗藩关系</br></br>
+
+                    中/国与日/本、韩/国等亚/洲国/家（兄弟）</br></br>
+                    
+                    2.文化相近</br></br>
+                    
+                    邻国——美/国与加/拿/大(兄弟)</br></br>
+                    
+                    3.同样民族的不同国家</br></br>
+                    
+                    普/鲁/士和德/国 （兄弟）</br></br>
+                    
+                    葡/萄/牙和西/班/牙(兄弟)</br></br>
+                    
+                    4.经济的援助与保护</br></br>
+                    
+                    瑞/士与列/支/敦/士/登 （兄妹）</br></br>
+                    
+                    5.一国曾被分割</br></br>
+                    
+                    北/意/大/利 与 南/意/大/利 （兄弟）</br></br>
+                    
+                    6.殖民地与宗主国</br></br>
+                    
+                    美/国（弟）与英/国（兄）</br></br>
+                    
+                    7.联合王国关系（同居或结婚）</br></br>
+                    
+                    奥/匈/帝/国(奥/地/利+匈/牙/利)</br></br>
+                    
+                    德/意/志帝国(德/意/志+奥/地/利)</br></br>
+                    
+                    波/兰-立/陶/宛/联/合/王/国（波/兰+立/陶/宛）</br></br>
+                    
+                    8.历史上巨大帝国之后</br></br>
+                    
+                    拜/占/庭/帝/国和养子希/腊、古/埃/及和儿子埃/及、罗/马/帝/国与孙子南北意/大/利兄弟（祖孙）</br></br>
+                    
+                    9.移民关系</br></br>
+                    
+                    挪/威与冰/岛(兄弟)</br></br>
+                    
+                    10.其它特殊关系</br></br>
+                    英/国和西/兰/公/国（兄弟）
+                </p>
+				<p id="content-2" style="display: nonne;">1.本家</br></br>
+
+                    指原作者日丸屋秀和及其原著漫画，其人是个留美设计专业学生，曾在纽约，日本，历史爱好者。</br></br>
+                    
+                    2.结婚</br></br>
+                    
+                    作为漫画内用词时，指的是两个国/家以不发动战争的和平方式结合（如奥/匈/帝/国、波/兰-立/陶/宛/联/邦），但不一定就是结婚。在角色的情况下以同性结婚为重点，或像奥/地/利一时有许多国/家存在（有如一夫多妻的状态）。现实中，联合是政/治上有相同目的而合作。</br></br>
+                    
+                    3.同居</br></br>
+                    
+                    作为漫画内用词时，通过战争方式或签订不平等条约等不和平的方式结合。如经过意/大/利战争後，北/意/大/利在奥/地/利的家中担任女仆的工作。</br></br>
+                    
+                    4.朋友</br></br>
+                    
+                    作为漫画内用词时，表成为邦交，同盟关系，缔结条约的意思。如结盟（轴/心/国）之事。</br></br>
+                    
+                    5.健康状况差</br></br>
+                    
+                    .指政/局不稳,经济不景气,内乱,有重大内部战争,争权夺权等。</br></br>
+                    
+                    6玩弄</br></br>
+                    
+                    被统治国/家对于为了向宗/主/国反抗、要求独立所做的运动施予压力的行为，如俄/罗/斯每次摸著拉/脱/维/亚的头的那种表现。</br></br>
+                    
+                    7.教导</br></br>
+                    
+                    指的是宗/主/国协助附/属/国文化传承发展之事，兄长对年幼时期的角色（别记参照）照料小孩子时使用的方式。</br></br>
+                    
+                    8.借住</br></br>
+                    
+                    指一个国/家的领土被复数的国/家瓜分持有。年幼意/大/利时代的意/大/利兄弟或日/俄/战/争前的中/国。表现出一个家中住着许多国/家的意思。</br></br>
+                    
+                    9.上司</br></br>
+                    
+                    作为漫画内用词时，代表国/家里的皇/帝，首/相，政/治/领/袖或国/家/元/首之类代表性的人物。</br></br>
+                    
+                    中/国的龙是个例外，因为皇帝太多了。</br></br>
+                    
+                    10.胃痛、肝痛等内脏疾病</br></br>
+                    
+                    指的是经济上的衰退或陷入低谷、进出口不发达、贸易因为战争或其他原因而突然中断。</br></br>
+                    
+                    11.肚子痛</br></br>
+                    
+                    地震了</br></br>
+                    
+                    12.感冒</br></br>
+                    
+                    指国/家危机或者经济不景气</br></br>
+                    
+                    13.身体痛</br></br>
+                    
+                    有政/权/斗/争</br></br>
+                    
+                    14.那个人</br></br>
+                    
+                    在过去的历史中的指导者或是有名人士，只是不明确指出</p>
+				<p id="content-3" style="display: none;">极东</br>
+                    月光下是最后的千年古国，他背上的伤疤来源于他那曾经的弟弟</br>
+                    君可犹记，同望皎月？手起刀落，断下前尘 </br>
+                    山川异域，风月同天</br>
+                    盛衰荣辱，千年与共</br>
+                   从日出到日落，便是整个世界</br>
+                    此时相望不相闻，愿逐月华流照君 </br></br>
+                    米英</br>
+                    在自由与他的选择中，我选择了自由，负着星条旗放开了他的手。 </br>
+                    我手中是不复存在的荣耀，他背负着星条旗不再归来。</br>
+                    当莱克星顿的枪声响起，我已得到自由，却失去了你。</br>
+                    你独战，我独行。</br>
+                    自你而来的大西暖流温暖了我整个冬天。</br></br>
+                初恋</br>
+                    从公元九百年开始，直到我生命中的最后的一刻还仍然喜欢着你 </br>
+                    我从公元900年就开始喜欢你了</br>
+                    想着待战争结束再去找他，但这一走，就再也没能回来。</br>   
+                    青梅枯萎，竹马老去，从此我爱的人都像你 。</br>
+                    我追上去的时候会逃跑，我逃跑的时候却又追了回来，她这样的女孩，我从公元900年前就喜欢她了。 </br></br>
+                    圣女贞德：</br>
+                    天佑法兰西，我只希望这一世，你能好好的、平静的活下去</br>
+
+                    贞德之逝:“我将逝去，而君永恒”。 </br></br>
+                    红色</br></br>
+                    愿我们在战争中萌发的爱情万古长青。</br>
+                    其实你知道，那个真正教你唱歌的人，早已死在了1991年的冬天。你只是继续走下他的红色路，一往无前。</br>
+                    我的黑眼睛的小傻瓜，我的不听话的小白马。</br>
+                    红色的路，我将替你走下去。 </br></br>
+                    dover</br>
+                    跨越34km的dover海峡，我在凯旋门等你的红茶 。</br>
+                    if amour means love，when I ask you do you love me , sweety，let your answer be oui. </br></br>
+                    丝路</br>
+                    你已逝去千年，而我容颜不变。</br>
+                    你若先行，我便未至；你若不来，我便不老。</br>
+                    黄沙散尽时，故人复来焉。</br>
+                    踏过万里的足印，让我再遇见你。任千年风沙漫袭，情未息</br>
+                    夜阑卧听风吹雨，铁马是你，冰河也是你。</br>
+                    他们相遇在彼此最美好的年华。</br></br>
+                    金钱
+                    原原本本，除了金钱，再无瓜葛。</br>
+                    日月无法将我们的光辉隐藏，那是五十五颗星，那是彼方。</br>
+                    金钱虽闪耀，但却是冰冷的 。</br>
+                    让世界为我们加冕</br>
+                   我们之间除了利益和金钱外毫无瓜葛</br>
+                    北京和纽约相差十二小时，你的朝辞白帝是我的日暮西辞。</br> </br>
+                    冷战</br>
+
+                    窗外大雪纷飞，我陪你一起等待春天</br>
+                    
+                阿拉斯加，是你送给我最好的礼物</br>
+                    
+                    愿你不再种满孤独的向日葵 </br>
+                    我会在你的葬礼上献上加州的向日葵</br>
+
+                    我等来了春天，却失去了你 </br>
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    </p>
+				<p id="content-4" style="display: none;">此作品由于题材敏感，网络上任何有关该动漫的讨论或资料编写须遵守网络礼仪，涉及国名、政权、敏感事件与地点等必须避讳以免被直接搜索到引发潜在危险。</br></br>
+
+                    在提到该作人物时，不要直接写出国家名称。可以在国家名中间添加符号，如意/大/利 或 意.大.利，也可以直接称呼角色名称。</br></br>
+                    
+                    “三字母”为对黑塔利亚的蔑称，在同人圈中请勿使用，正确简称为APH。</br></p>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function showContent(contentNumber) {
+			var contentElements = document.querySelectorAll('#text-container p');
+			for (var i = 0; i < contentElements.length; i++) {
+				contentElements[i].style.display = 'none';
+			}
+			document.querySelector('#content-' + contentNumber).style.display = 'block';
+		}
+	</script>
+    <a href=".\aph.html" class="back">返回主页</a>
+    <h1><b>我是一条船，政府是桅杆，国民是风，时代是海。</br>
+                    
+        只要有笔直刚挺的桅杆和顺风，船就会顺利前进。</br>
+        
+        当然，偶尔也会发生触礁事故什么的。</br>
+        
+        但只要有人愿意修理，我这只船是可以一直、一直航行下去的哟！</b></h1>
+</body>
+</html>

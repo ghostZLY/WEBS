@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>游戏介绍</title>
+	<style>
+		/* 设置页面样式 */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		
+		#main {
+			background-color: #F8F8F8;
+			padding: 50px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.box {
+			background-color: white;
+			border-radius: 10px;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+			width: 100%;
+			margin-bottom: 30px;
+			overflow: hidden;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+			display: none;
+		}
+		.box.active {
+			display: block;
+		}
+		.box.active img{
+			display: block;
+			width: 50%;
+			height: 50%;
+			border-radius: 10px 10px 0 0;
+			transition: all 0.3s ease-in-out;
+		}
+		.box .content{
+			padding: 20px;
+			height: 500px;
+			overflow-y: scroll;
+		}
+		.box img {
+			display: block;
+			width: 50%;
+			height: 35%;
+			border-radius: 10px 10px 0 0;
+			transition: all 0.3s ease-in-out;
+		}
+		.box:hover img {
+			transform: scale(1.1);
+		}
+		.box h2 {
+			font-size: 24px;
+			font-weight: bold;
+			margin: 20px;
+		}
+		.tags {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 20px;
+			background-color: #F5F5F5;
+			height: 50px;
+		}
+		.tag {
+			font-size: 18px;
+			font-weight: bold;
+			color: #333;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+		}
+		.tag:hover {
+			color: #007ACC;
+		}
+		.active {
+			color: #007ACC;
+			border-bottom: 3px solid #007ACC;
+		}
+        .IMAGE{
+            width: 1000px;
+            height:500px;
+            overflow: hidden;
+            display: block;
+            margin: 0 auto;
+            
+            
+        }
+        .IMAGE img{
+            width:100%;
+            height: 100%;
+            
+            }
+        .IMAGE:hover img:last-child{
+            display: block;
+        }
+        .IMAGE:hover img:first-child{
+            display: none;
+        }
+        .IMAGE img:last-child{
+            display: none;
+        }
+		.back {
+			position: fixed;
+			top: 20px;
+			right: 20px;
+			padding: 10px 20px;
+			background-color: #ff6600;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+
+        
+	</style>
+</head>
+<body>
+	<h1>APHONI</h1>
+    <div class="IMAGE">
+        
+	<img src="..\image\800.jpg">
+    <img src="..\image\QQ图片20231128214740.png">
+        
+    </div>
+	<div id="main">
+		<div class="box active">
+			<img src="..\image\300.jpg" alt="游戏截图">
+			<h2>简介</h2>
+			<p>《黑塔鬼》（ヘタ鬼），是一位动漫爱好者トモヨシ将恐怖RPG游戏《青鬼》和大人气动漫作品《黑塔利亚》作为基础和参考，制成的悬疑类三次创作同人RPG游戏实况类视频。这部作品在网络上发布至24话，尚未填坑，制作者亦发布了试玩版的游戏，于2009年9月26日在PC平台上发布。
+
+				在某次的世界会议之后，北、意、大、利偶然听到了街边四人关于一座闹鬼洋馆的谈话，兴起，去一栋闹鬼的洋馆中探险，却被困在了里面。正当这时，他们遇到了外貌疑似TONY的怪物，与其战斗以后的第二天，他们遇到了五人，决定联合起来一起找寻逃出洋馆的方法。</p>
+		</div>
+		<div class="box">
+			<img src="..\image\300 (1).jpg" alt="游戏截图">
+			<h2>游戏剧情</h2>
+			<div class="content">
+			<p>序章</p>
+
+				在某次的世界会议之前，北/意/大/利从德/国的训练中逃脱后偶然听到了街边四个小孩子（即本作参考作品《青鬼》中的四人组）关于一座闹鬼洋馆的谈话，北/意/大/利想和大家一起去玩耍打闹，觉得美/国会有兴趣接受提议就告诉了他。</p>
+				
+				<p>（↑轮回开始前的情节）</p>
+				
+				<p>美/国向众人发出邀请，日/本想拒绝但没有成功，此时他注意到北/意/大/利一直看向有西/班/牙和罗/马/诺（南/意/大/利，北/意/大/利的哥哥）在的休息室，问他是否找两人有事。北意大利表示没有关系，原因则是“现在去见他们的话，一定，连已定的决心都会被动摇的。”</p>
+				
+				<p>1~5</p>1~5
+				
+				<p>“如此这般那般”，北/意/大/利、德/国、普/鲁/士和日/本一起去洋馆中探险，却被困在了里面。这时，他们遇到了外貌与TONY（美/国的外星人朋友）相似的怪物（后被众人称为汤米），四人与其战斗成功后北/意/大/利、德/国、日/本与中/国、俄/罗/斯、英/国、加/拿/大汇合，决定一起寻找失踪的普/鲁/士、法/国和美/国。七人在钢琴房研究路上捡到的纸片和琴键上数字的关系，试着得出某个房间里的保险箱的密码。这时，众人关于来时同行者的记忆却出现了分歧……</p>
+			</div>
+		</div>
+		<div class="box">
+			<img src="..\image\43be41eca5cadbcf.jpg" alt="游戏截图">
+			<h2>人物语录</h2>
+		   <div class="content">
+			<p>费里西安诺·瓦尔加斯（Feliciano Vargas，フェリシアーノ·ヴァルガス）</p>
+			<p>拜托了……拜托你们，如果出去了的话就跑，绝对绝对不要重新回来，不要把我忘记，不要责备我，不要为我哭泣，虽然好害怕……但是……好开心……对不起。</p>
+           <p>要我作为前辈教你吗？如果想贯彻谎言，就需要背负相当的觉悟，否则连我这种程度的人都能马上看穿。</p>
+		   <p>给……给存在于某个时间中，不再孤单一人的我</p>
+		   <p>就算绕着不同的道路走，不管怎样大家还是会消失。如果我没有听到什么传闻的话……如果我没有去跟美/国说的话。啊啊不行啊，不更加努力一点的话。下一句台词应该是什么来着？下一次，谁将有生命危险来着？下一步该做出的行动……是什么？我还要犯下多少次的错误，还要说多少次同样的台词。还要多少次，眼睁睁看着同伴们一个个死去。多少次缔结了各种各样的约定，但是下次见面时大家都会忘记。明明好不容易关系才变得那么好，到下次见面，一切又会回到原点。</p>
+		   <p>路德维希·贝什米特（Ludwig Beillschmidt，ルートヴィッヒ）</p>
+		   <p>我希望他能醒过来。无论如何他能醒来的话，就是最好的了。那之后意/大/利想说，我会听他说；如果他不想说，我也不打算多问。</p>
+		   <p>关键时刻连同伴也无法保护的话，平时的训练也毫无意义了，最低限度，要把你肩上的负担卸下来的程度。</p>
+		</div>
+	</div>
+		<div class="box">
+			<img src="..\image\20150806215659_GVAX5.png" alt="游戏截图">
+			<h2>人物语录</h2>
+			<div class="content">
+			<p>阿尔弗雷德·F·琼斯（Alfred F Jones，アルフレッド·F·ジョーンズ）</p>
+			<p>我伸出的手指，是几根？</p>
+			<p>两秒呢，很长哟，长到可以拯救一个国家的性命……呢。</p>
+			<p>啊啊，不是啦，真是的，他们已经再也听不到了所以我才直说了……我，想留在他们身边。直到我的终焉来临。他们两个，都是我最重要的人。</p>
+			<p>在令人混乱的遥远过去……在许久前的世界里，我确实，曾这样问你……我伸出的手指，是几根？答得出来吧？如果你……看得见的话。求求你，不要道歉。再次重复这种事，我真的……</p>
+			<p>亚瑟·柯克兰（Arthur Kirkland，アーサー·カークランド）</p>
+			<p>拜托了，斩断这连锁吧。</p>
+			<p>那，你和我面对面商量过吗！你对我说过，不要使用会削减生命的魔法吗？哪怕一次也好，你找我商量过吗？那么，说出来听听啊。……是吗，我明白你的意思了。喂，等他醒了帮我转告那边那个装睡的笨蛋。是谁决定了“英雄注定孤独”。</p>
+			</div>
+
+		</div>
+	</div>
+	<div class="tags">
+		<div class="tag active" onclick="changeContent(0)">1</div>
+		<div class="tag" onclick="changeContent(1)">2</div>
+		<div class="tag" onclick="changeContent(2)">3</div>
+		<div class="tag" onclick="changeContent(3)">4</div>
+	</div>
+	<script>
+		const tags = document.querySelectorAll('.tag');
+		const boxes = document.querySelectorAll('.box');
+
+		function changeContent(index) {
+			// 移除所有标签的 active 类
+			tags.forEach(tag => {
+				tag.classList.remove('active');
+			});
+			// 添加当前点击标签的 active 类
+			tags[index].classList.add('active');
+			// 隐藏所有方框
+			boxes.forEach(box => {
+				box.classList.remove('active');
+			});
+			// 显示对应索引的方框
+			boxes[index].classList.add('active');
+		}
+		
+	</script>
+	 <a href=".\aph.html" class="back">返回主页</a>
+</body>
+</html>

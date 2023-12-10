@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>黑塔利亚介绍网页</title>
+    <style>
+        .logo{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+        h1{color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        p{color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        nav ul{
+        list-style: none;
+        padding:0;
+        margin :0;
+        display:flex;
+    }
+        nav li{
+            margin-right: 20px;
+        }
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #666;
+        }
+        main {
+            display: flex;
+            align-items: center;
+        }
+
+        section {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cover {
+            max-width: 200px; /* 设置封面图片的最大宽度 */
+            margin-right: 20px;
+        }
+
+        .summary {
+            margin-left: 300px;
+            margin-top: -300px;
+            flex: 1;
+            overflow-y: scroll; /* 当内容超出容器高度时显示滚动条 */
+            max-height: 400px; /* 设置文字框的最大高度 */
+        }
+        body{
+            display:flex;
+            flex-direction: column;
+            min-height:100vh;
+        }
+        main{
+            flex:1;
+            display: flex;
+            align-items: center;
+
+        }
+        body {
+           
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* 设置背景颜色为半透明黑色 */
+            z-index: -1;
+        }
+        .back {
+			position: fixed;
+			top: 20px;
+			right: 20px;
+			padding: 10px 20px;
+			background-color:#330;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+        
+        </style>
+</head>
+<body background="..\image\Jzsk-hpevhck8336317.jpg">
+    <header>
+        <h1>APH</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">主页</a></li>
+                <li><a href="web/character introduction.html">角色介绍</a></li>
+                <li><a href="web/derive.html">洐生音乐</a></li>
+                <li><a href="web/game.html">同人游戏创作</a></li>
+                <li><a href="web/rule.html">其他</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <div class="cover">
+                <img src="..\image\24dc96dad53e6ae5fb6a7eecfad5e6630da44686.jpg@330w_442h.webp" alt="作品封面图">
+            </div>
+            <div class="summary">
+                <h2>作品简介</h2>
+                <p>《黑塔利亚》（Axis powers ヘタリア）是一部在互联网上连载的漫画，于2003年开始连载至今，作者为日丸屋秀和。[1]其单行本由幻冬舍Comics出版，但与网络版有稍微不同的差异。相关的周边包含了同人CD、商业DRAMA等。
+
+                    《黑塔利亚》以世界历史为主轴。它把将多个国家以及该国的文化以及风土民情拟人化，主要以喜剧的四格及短篇为主。以第一次世界大战和第二次世界大战为时间点，以同盟国和轴心国为主线，各色拟人化的国家相互交织，以颇为喜剧的形式演绎历史和历史事件。[2]
+                    
+                    动画版于2009年1月24号开始播放。其单行本由幻冬舍Comics出版，但与网络版有稍微不同的差异。相关的周边包含了同人CD、商业DRAMA等。</p>
+                <p>作品描写了意/大/利和世界里快乐的朋友们拥有世界性的才能的故事。把讨人喜欢在战斗时却很弱的的意/大/利和严肃认真的德/意/志作为中心，加上日/本、英/国、美/国、法/国、中/国等人物，由历史性事件和有关国民性的故事展开而成的一个短闹剧。一战时期，德/国与意/大/利交战，对曾经强大的罗/马/帝/国有些畏惧的德/国却发现，如今罗/马的孙子——意/大/利已经成为了超级乐天的废柴！这样的意/大/利与固执的日/本，我行我素的奥/地/利之间会发生什么呢？另一方面，由英美中苏法组成的同/盟/国也开始活跃了……</p>
+                <!-- 更多作品梗概的内容 -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 黑塔利亚官方网站</p>
+    </footer>
+    <img src="..\image\APH-まるかいて地球.jpg" alt="logo"class="logo">
+    
+</body>
+</html>
